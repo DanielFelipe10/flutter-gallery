@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:galery/data/images_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -11,8 +12,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Hola'),
+      body: GridView.extent(
+        maxCrossAxisExtent: 200.0,
+        children: _imagesList,
       ),
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
@@ -29,5 +31,15 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
+  }
+
+  List<Widget> get _imagesList {
+    List<Widget> _listImages = [];
+
+    for (var image in images) {
+      _listImages.add(Image.network(image));
+    }
+
+    return _listImages;
   }
 }
