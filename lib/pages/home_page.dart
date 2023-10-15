@@ -12,6 +12,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          'HYPED',
+          style: TextStyle(
+              color: Colors.amber, fontSize: 20.0, fontFamily: 'Grifter'),
+        ),
+        centerTitle: true,
+        elevation: 0,
+      ),
       body: GridView.extent(
         maxCrossAxisExtent: 200.0,
         padding: const EdgeInsets.all(5.0),
