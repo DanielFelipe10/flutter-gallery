@@ -14,6 +14,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: GridView.extent(
         maxCrossAxisExtent: 200.0,
+        padding: const EdgeInsets.all(5.0),
+        mainAxisSpacing: 5.0,
+        crossAxisSpacing: 5.0,
         children: _imagesList,
       ),
       bottomNavigationBar: BottomAppBar(
@@ -37,7 +40,14 @@ class _HomePageState extends State<HomePage> {
     List<Widget> _listImages = [];
 
     for (var image in images) {
-      _listImages.add(Image.network(image));
+      _listImages.add(ClipRRect(
+        borderRadius: BorderRadius.circular(5.0),
+        child: Image.network(
+          image,
+          fit: BoxFit.cover,
+          height: 190.0,
+        ),
+      ));
     }
 
     return _listImages;
