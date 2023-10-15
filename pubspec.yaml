@@ -85,10 +85,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 fonts:
-  - family: Grifter
+  - family: Under
     fonts:
-      - asset: assets\fonts\grifterbold.otf
-        style: bold
+      - asset: ../assets/fonts/Under-Station.ttf
+        style: normal
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

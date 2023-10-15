@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ImageView extends StatelessWidget {
-  const ImageView({super.key});
+  final String url;
+  const ImageView({super.key, required this.url});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Image.network(url),
+    );
   }
 }

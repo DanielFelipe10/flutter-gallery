@@ -8,10 +8,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Galery',
-      home: HomePage(),
+      title: 'GalArt',
+      theme: ThemeData(fontFamily: 'Under'),
+      home: const HomePage(),
     );
   }
 }

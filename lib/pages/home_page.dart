@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:galery/data/images_list.dart';
+import 'package:galery/pages/image_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,12 +14,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text(
-          'HYPED',
+        title: const Text(
+          'GalArt',
           style: TextStyle(
-              color: Colors.amber, fontSize: 20.0, fontFamily: 'Grifter'),
+              fontFamily: 'Under', color: Colors.amber, fontSize: 20.0),
         ),
+        backgroundColor: Colors.white,
         centerTitle: true,
         elevation: 0,
       ),
@@ -53,10 +54,16 @@ class _HomePageState extends State<HomePage> {
     for (var image in images) {
       _listImages.add(ClipRRect(
         borderRadius: BorderRadius.circular(5.0),
-        child: Image.network(
-          image,
-          fit: BoxFit.cover,
-          height: 190.0,
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ImageView(url: image)));
+          },
+          child: Image.network(
+            image,
+            fit: BoxFit.cover,
+            height: 190.0,
+          ),
         ),
       ));
     }
