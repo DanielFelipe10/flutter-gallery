@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(5.0),
         mainAxisSpacing: 5.0,
         crossAxisSpacing: 5.0,
+        childAspectRatio: 0.6,
         children: _imagesList,
       ),
       bottomNavigationBar: BottomAppBar(
