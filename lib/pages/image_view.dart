@@ -26,11 +26,12 @@ class ImageView extends StatelessWidget {
                 child: Image.network(
                   url,
                   height: 600.0,
-                  width: 360.0,
+                  width: 340.0,
                   fit: BoxFit.cover,
                 ),
               ),
             ),
+            const Divider()
           ],
         ),
         bottomNavigationBar: BottomAppBar(
@@ -46,7 +47,8 @@ class ImageView extends StatelessWidget {
             // Tu función de manejo del botón aquí
           },
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButtonLocation:
+            FloatingActionButtonLocation.miniEndDocked,
       ),
     );
   }
