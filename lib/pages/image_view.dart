@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 class ImageView extends StatelessWidget {
   final String url;
@@ -8,10 +9,17 @@ class ImageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Stack(
           children: [
+            ImageFiltered(
+              imageFilter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+              child: Image.network(
+                url,
+                height: double.infinity,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
+            ),
             IconButton(
                 onPressed: () {
                   Navigator.pop(context);
@@ -25,13 +33,12 @@ class ImageView extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5.0),
                 child: Image.network(
                   url,
-                  height: 600.0,
-                  width: 340.0,
+                  height: 550.0,
+                  width: 300.0,
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            const Divider()
           ],
         ),
         bottomNavigationBar: BottomAppBar(
