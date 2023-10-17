@@ -20,14 +20,27 @@ class ImageView extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            IconButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: const Icon(
-                  Icons.arrow_back_sharp,
-                  size: 35.0,
-                )),
+            Container(
+              width: 60.0,
+              height: 60.0,
+              decoration: const BoxDecoration(
+                  shape: BoxShape.circle, color: Colors.white),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back_sharp,
+                          size: 30.0,
+                          color: Colors.amber,
+                          weight: 700,
+                        )),
+                  ]),
+            ),
             Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(5.0),
@@ -43,7 +56,30 @@ class ImageView extends StatelessWidget {
         ),
         bottomNavigationBar: BottomAppBar(
           shape: const CircularNotchedRectangle(),
-          child: Container(height: 50.0),
+          child: SizedBox(
+              height: 60.0,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  RichText(
+                    text: const TextSpan(
+                      text: 'Gal',
+                      style: TextStyle(fontSize: 20.0, fontFamily: 'Madani'),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: 'Art',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 30.0,
+                                color: Colors.amber)),
+                        TextSpan(
+                            text: ' now!', style: TextStyle(fontSize: 20.0)),
+                      ],
+                    ),
+                  ),
+                ],
+              )),
         ),
         floatingActionButton: FloatingActionButton(
           tooltip: 'Like',

@@ -91,9 +91,9 @@ fonts:
         style: normal
 
   - family: Madani
-      fonts:
-        - asset: assets\fonts\madani-medium.ttf
-          style: medium
+    fonts:
+      - asset: assets\fonts\madani-medium.ttf
+        style: medium
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
