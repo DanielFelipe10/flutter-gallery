@@ -1,4 +1,4 @@
-#Flutter Gallery
+# Flutter Gallery
 
 <div style="display: flex; justify-content: center; margin: 15px">
 <img src="https://images-eds-ssl.xboxlive.com/image?url=Q_rwcVSTCIytJ0KOzcjWTYtI_MIrVq4WfN7M.qN7gV3ayNiQeJK6Uxg366DH3bnRmVWMFBWWyXonVyp6x0RYE1elb_jkQQQH7FwsNBBqQO4iFrOIwXtaGkMjmrISfBfgMsCEGwIBPArmzCSVWYx1zA--&format=source" style="width: 40px"><img src="https://web-strapi.mrmilu.com/uploads/flutter_logo_470e9f7491.png" style="width: 40px">
@@ -9,7 +9,7 @@
 <hr>
 
 <p>When you enter the Gallery you will find a large number of images with which you can interact.</p>
-<img style="width: 150px" src="https://github.com/DanielFelipe10/flutter-gallery/blob/main/img/gal1.jpeg" alt="Galery main">
+<img style="width: 300px" src="https://github.com/DanielFelipe10/flutter-gallery/blob/main/img/gal1.jpeg" alt="Galery main">
 <hr>
 <p>If you select one of the images it will be displayed completely and will allow you to add it to your favorites.</p>
-<img style="width: 150px" src="https://github.com/DanielFelipe10/flutter-gallery/blob/main/img/gal2.jpeg" alt="Image view">
+<img style="width: 300px" src="https://github.com/DanielFelipe10/flutter-gallery/blob/main/img/gal2.jpeg" alt="Image view">
