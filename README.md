@@ -10,7 +10,7 @@
 <hr>
 
 <p>When you enter the Gallery you will find a large number of images with which you can interact.</p>
-<img src="" alt="Galery main">
+<img src="https://github.com/DanielFelipe10/flutter-gallery/blob/main/img/gal1.jpeg" alt="Galery main">
 <hr>
 <p>If you select one of the images it will be displayed completely and will allow you to add it to your favorites.</p>
-<img src="" alt="Image view">
+<img src="https://github.com/DanielFelipe10/flutter-gallery/blob/main/img/gal2.jpeg" alt="Image view">
