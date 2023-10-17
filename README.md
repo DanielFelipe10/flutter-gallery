@@ -1,5 +1,4 @@
-<center><img src="https://cdn-icons-png.flaticon.com/128/3104/3104280.png" style= "width: 70px;"><h1 style="margin: 0;">Flutter Galery</h1></center>
-
+#Flutter Gallery
 
 <div style="display: flex; justify-content: center; margin: 15px">
 <img src="https://images-eds-ssl.xboxlive.com/image?url=Q_rwcVSTCIytJ0KOzcjWTYtI_MIrVq4WfN7M.qN7gV3ayNiQeJK6Uxg366DH3bnRmVWMFBWWyXonVyp6x0RYE1elb_jkQQQH7FwsNBBqQO4iFrOIwXtaGkMjmrISfBfgMsCEGwIBPArmzCSVWYx1zA--&format=source" style="width: 40px"><img src="https://web-strapi.mrmilu.com/uploads/flutter_logo_470e9f7491.png" style="width: 40px">
