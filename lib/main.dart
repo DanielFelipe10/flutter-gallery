@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'GalArt',
-      theme: ThemeData(fontFamily: 'Under'),
+      theme: ThemeData(fontFamily: 'Madani'),
       home: const HomePage(),
     );
   }

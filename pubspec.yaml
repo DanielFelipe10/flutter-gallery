@@ -89,9 +89,11 @@ fonts:
     fonts:
       - asset: ../assets/fonts/Under-Station.ttf
         style: normal
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
+
+  - family: Madani
+      fonts:
+        - asset: assets\fonts\madani-medium.ttf
+          style: medium
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

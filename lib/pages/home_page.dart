@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text(
           'GalArt',
           style: TextStyle(
-              fontFamily: 'Under', color: Colors.amber, fontSize: 20.0),
+              fontFamily: 'Madani', color: Colors.amber, fontSize: 20.0),
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
