@@ -24,7 +24,8 @@ class ImageView extends StatelessWidget {
               width: 60.0,
               height: 60.0,
               decoration: const BoxDecoration(
-                  shape: BoxShape.circle, color: Colors.white),
+                  shape: BoxShape.circle,
+                  color: Color.fromARGB(255, 48, 48, 48)),
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,35 +58,43 @@ class ImageView extends StatelessWidget {
         bottomNavigationBar: BottomAppBar(
           shape: const CircularNotchedRectangle(),
           child: SizedBox(
-              height: 60.0,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  RichText(
-                    text: const TextSpan(
-                      text: 'Gal',
-                      style: TextStyle(fontSize: 20.0, fontFamily: 'Madani'),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: 'Art',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 30.0,
-                                color: Colors.amber)),
-                        TextSpan(
-                            text: ' now!', style: TextStyle(fontSize: 20.0)),
-                      ],
+              height: 50.0,
+              width: double.infinity,
+              child: Container(
+                color: Colors.grey[850],
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    RichText(
+                      text: const TextSpan(
+                        text: 'Gal',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            fontFamily: 'Madani',
+                            color: Colors.white),
+                        children: <TextSpan>[
+                          TextSpan(
+                              text: 'Art',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 25.0,
+                                  color: Colors.amber)),
+                          TextSpan(
+                              text: ' now!',
+                              style: TextStyle(
+                                  fontSize: 15.0, color: Colors.white)),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               )),
         ),
         floatingActionButton: FloatingActionButton(
           tooltip: 'Like',
-          child: const Icon(Icons.favorite_outlined,
-              color: Colors.red, size: 35.0),
-          backgroundColor: Colors.white,
+          child: const Icon(Icons.favorite_outlined, size: 30.0),
+          backgroundColor: Colors.red,
           onPressed: () {
             // Tu función de manejo del botón aquí
           },
