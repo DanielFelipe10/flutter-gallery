@@ -77,13 +77,16 @@ class ImageView extends StatelessWidget {
                           TextSpan(
                               text: 'Art',
                               style: TextStyle(
+                                  fontFamily: 'Under',
                                   fontWeight: FontWeight.bold,
                                   fontSize: 25.0,
                                   color: Colors.amber)),
                           TextSpan(
                               text: ' now!',
                               style: TextStyle(
-                                  fontSize: 15.0, color: Colors.white)),
+                                  fontSize: 15.0,
+                                  color: Colors.white,
+                                  fontFamily: 'madani')),
                         ],
                       ),
                     ),

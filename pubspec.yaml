@@ -87,13 +87,16 @@ flutter:
 fonts:
   - family: Under
     fonts:
-      - asset: ../assets/fonts/Under-Station.ttf
-        style: normal
-
+      - asset: assets/fonts/Under-Station.ttf
   - family: Madani
     fonts:
-      - asset: assets\fonts\madani-medium.ttf
-        style: medium
+      - asset: assets/fonts/madani-medium.ttf
+  - family: Inter
+    fonts:
+      - asset: assets/fonts/Inter.ttf
+  - family: Sandler
+    fonts:
+      - asset: assets/fonts/Sandler-Trial.otf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

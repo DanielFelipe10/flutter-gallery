@@ -18,9 +18,9 @@ class _HomePageState extends State<HomePage> {
           title: const Text(
             'GalArt',
             style: TextStyle(
-                fontFamily: 'Madani', color: Colors.amber, fontSize: 20.0),
+                fontFamily: 'Sandler', color: Colors.amber, fontSize: 20.0),
           ),
-          backgroundColor: Colors.grey[850],
+          backgroundColor: Colors.grey[900],
           centerTitle: true,
         ),
         body: GridView.extent(
